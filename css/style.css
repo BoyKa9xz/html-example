@@ -1,0 +1,77 @@
+html{
+	font-size: 100%;
+}body {
+	font-family: "Montser";
+}
+.list{
+	--spacing: 20px;
+	display: flex;
+	align-items: stretch;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	/*margin: 0 calc(var(--spacing)*(-1));*/
+}						
+.list-item{
+	margin: 0 var(--spacing);
+	width: calc(33.33% - var(--spacing)*2);
+	/*width: 30%;*/
+}
+
+.list-image{
+	max-width: 95%;
+}
+@media screen and (max-width: 1024px) {
+ 	.list-item{
+		margin: 0 var(--spacing);
+		width: calc(49% - var(--spacing)*2);
+	}
+}
+@media only screen and (max-width: 768px) {
+ 	.list-item{
+		margin: 0 var(--spacing);
+		width: calc(99% - var(--spacing)*2);
+	}
+}
+@media only screen and (max-width: 992px) {
+  body {
+    background-color: lightblue;
+  }
+}
+/*@media screen and (max-width: 992px){
+	.list-item{
+		margin: 0 var(--spacing);
+		width: calc(49% - var(--spacing)*2);
+	}
+}
+@media screen and (max-width: 800px){
+	.list-item{
+		margin: 0 var(--spacing);
+		width: calc(49% - var(--spacing)*2);
+	}
+}
+*/
+body {    background:#E4E3E4;} /* 1024px以上の幅の場合に適応される */
+@media screen and (max-width: 1024px) {
+/* 1024pxまでの幅の場合に適応される */
+    body {
+        background-color:#2262D1;
+    }
+}
+@media screen and (max-width: 768px) {
+/* 768pxまでの幅の場合に適応される */
+     body {
+        background-color:#f10010;
+    }
+}
+@media screen and (max-width: 480px) {
+/* 480pxまでの幅の場合に適応される */
+    body {
+        background-color:#F9DF2C;
+    }
+}
+@media screen and (max-width: 320px) {
+/* 320pxまでの幅の場合に適応される */
+    body {
+        background-color: #68B876;
+    }
+}
